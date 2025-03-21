@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="supercontainer">
+    <div class="header">CRUD Operations</div>
+    <div class="container">
+        <div class="tabs">
+            <label><input type="radio" name="method" value="GET"><span>GET</span></label>
+            <label><input type="radio" name="method" value="POST"><span>POST</span></label>
+            <label><input type="radio" name="method" value="PATCH" checked><span>PATCH</span></label>
+            <label><input type="radio" name="method" value="PUT"><span>PUT</span></label>
+            <label><input type="radio" name="method" value="DELETE"><span>DELETE</span></label>
+        </div>
+        <div class="box">
+        <label for="id" id="labelid">ID: </label>
+        <input type="text" name="id" id="id" size="1"><br>
+        <label for="avatar" id="icon">Avatar: </label>
+        <input type="file" name="avatar" id="img"><br>
+        <label for="firstname" id="first">First Name: </label>
+        <input type="text" name="firstname" id="fname"><br>
+        <label for="lastname" id="last">Last Name: </label>
+        <input type="text" name="lastname" id="lname"><br>
+        <label for="email" id="credentials">Email: </label>
+        <input type="text" name="email" id="cred"><br>
+        <center><button onClick="buttonClick(this)" id="butt">PATCH</button></center>
+        <script src="./script.js"></script>
+        </div>
+    </div>
+</div>
+    <div id="userlist">
+
+    </div>
+</body>
+</html>

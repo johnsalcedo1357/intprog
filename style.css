@@ -1,0 +1,94 @@
+body {
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('./sora.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -15vh;
+}
+.box {
+    padding:30px;
+    margin:0;
+}
+.supercontainer{
+    width:30%;
+    margin:auto;
+    margin-top: 25vh;
+    display:flex;
+    flex-direction: column;
+}
+
+.container {
+    display:flex;
+    flex-direction: column;
+    background-image: url("./body.png");
+    background-size:cover;
+    background-repeat:no-repeat;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.24);
+}
+.header{
+    padding:10px;
+    box-sizing: border-box;
+    font-weight:700;
+    text-align: center;
+    color:rgb(46,75,114);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-image: url("./header.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid gray;
+}
+
+.tabs {
+    text-align: center;
+    gap:0;
+    font-size: 0;
+}
+
+.tabs > label {
+    --center: 7px;
+    transform: skewX(-15deg);
+    display: inline-block;
+    padding: 5px calc(var(--center) + 7px) 5px 7px;
+    margin:0;
+    margin-top: 5px;
+    font-size: 16px;
+    border-right: 1px solid gray;
+    background-color: white;
+    border-top:1px solid gray;
+    box-shadow: 0px 1px 1px gray;
+}
+
+.tabs > label:first-child {
+    border-top:1px solid gray;
+    border-left:1px solid gray;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.tabs > label > span {
+    display: inline-block;
+    transform: skewX(15deg);
+}
+
+.tabs > label:last-child {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.tabs label:has(input:checked) {
+    background-color: rgb(46,75,114);
+    color: white;
+    transition: background-color 0.1s ease;
+}
+
+input[type="radio"]{
+    appearance: none;
+}
+
+.box > label, .box > input[type="text"], .box > input[type="file"]{
+    align-self: center;
+}
